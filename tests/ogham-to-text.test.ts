@@ -45,4 +45,13 @@ describe('Ogham to letters transformation tests', () => {
 
     expect(result).toBe(expected);
   });
+
+  test('Transforms Forfeda characters', () => {
+    const ohham = '᚛ᚕᚖᚗᚘᚚᚙ᚜';
+    const expected = 'koiuiiopai';
+
+    const result = oghamToLetters(ohham);
+
+    expect(result).toBe(expected);
+  });
 });
