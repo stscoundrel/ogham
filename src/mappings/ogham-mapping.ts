@@ -9,7 +9,7 @@ export const getOghamMapping = (): Map<string, string> => {
   oghamMapping.set('ᚃ', 'v');
   oghamMapping.set('ᚄ', 's');
   oghamMapping.set('ᚅ', 'n');
-  oghamMapping.set('ᚆ', 'j');
+  oghamMapping.set('ᚆ', 'h');
   oghamMapping.set('ᚇ', 'd');
   oghamMapping.set('ᚈ', 't');
   oghamMapping.set('ᚉ', 'c');

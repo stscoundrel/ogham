@@ -46,6 +46,15 @@ describe('Ogham to letters transformation tests', () => {
     expect(result).toBe(expected);
   });
 
+  test('Transforms Latin text written in ogham, in the Annals of Inisfallen of 1193', () => {
+    const ohham = '᚛ᚅᚒᚋᚒᚄ ᚆᚑᚅᚑᚏᚐᚈᚒᚏ ᚄᚔᚅᚓ᚜ ᚛ᚅᚒᚋᚑ ᚅᚒᚂᚂᚒᚄ ᚐᚋᚐᚈᚒᚏ᚜';
+    const expected = 'numus honoratur sine numo nullus amatur';
+
+    const result = oghamToLetters(ohham);
+
+    expect(result).toBe(expected);
+  });
+
   test('Transforms Forfeda characters', () => {
     const ohham = '᚛ᚕᚖᚗᚘᚚᚙ᚜';
     const expected = 'koiuiiopai';
