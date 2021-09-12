@@ -1,6 +1,15 @@
 import { lettersToOgham } from '../src';
 
 describe('Letters to ogham transformation tests', () => {
+  test('Appends start / prepends end characters', () => {
+    const expected = '᚛᚜';
+    const text = '';
+
+    const result = lettersToOgham(text);
+
+    expect(result).toBe(expected);
+  });
+
   test('Transforms "Netacari, nephew of Cagi", from Castletimon, Brittas Bay, Co Wicklow', () => {
     const expected = '᚛ᚅᚓᚈᚐᚉᚐᚏᚔᚅᚓᚈᚐᚉᚉᚐᚌᚔ᚜';
     const text = 'netacarinetaccagi';
