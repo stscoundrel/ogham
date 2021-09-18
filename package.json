@@ -1,5 +1,5 @@
 {
-  "name": "ogam",
+  "name": "ogham-inscriptions",
   "version": "1.0.0",
   "description": "Convert Ogham inscriptions to latin text & vice versa",
   "repository": "https://github.com/stscoundrel/ogham.git",
